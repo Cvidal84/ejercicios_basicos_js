@@ -18,10 +18,10 @@ function repeatCounter(list) { //todo esto tengo que repasarlo bien...
     const count = {}
 
     list.forEach(word => {
-        if(count[word]) {
+        if(count[word]) { //el primero es si la palabra ya se ha encontrado en la lista
             count[word]++
         } else {
-            count[word] = 1
+            count[word] = 1 // el segundo es si la palabra aparece por primera vez
         }
 
     })

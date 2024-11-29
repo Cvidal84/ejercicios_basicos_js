@@ -16,9 +16,9 @@ const names = [
   function nameFinder(nameList, nameFind) { //esto no lo controlo bien...
     const index = nameList.findIndex(name => name.toLowerCase() === nameFind.toLowerCase())
     if (index !== -1) {
-        return `El nombre "${nameFind}" está en el array en la posición ${index}.`
+        return `El nombre ${nameFind} está en el array en la posición ${index}.`
     } else {
-        return `El nombre "${nameFind}" no está en el array.`
+        return `El nombre ${nameFind} no está en el array.`
     }
   }
 
