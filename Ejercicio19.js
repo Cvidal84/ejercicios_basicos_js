@@ -14,7 +14,11 @@ const filteredToys =[]
 
 for (let toy of toys) {
     if (!toy.name.includes("gato")) {
-        fiteredtoys.push(toy)
+        filteredtoys.push(toy)
     }
 }
 console.log(filteredToys)
+
+/* este ejercicio se podria hacer como el de antes pero es mejor hacerlo asi
+porque sino se pueden cambiar los indices si vamos borrando elementos de un Array,
+es siempre mejor hacer un array nuevo */

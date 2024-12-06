@@ -13,4 +13,21 @@ function averageWord(list) {
     }
     return(sumaTotal)
 }
+console.log("Con un for normal")
 console.log(averageWord(mixedElements))
+
+//se puede hacer con un for of también
+
+function averageWord1(list) {
+    let sumaTotal1 = 0
+    for (let element of mixedElements) {
+        if(typeof element === 'string') {
+            sumaTotal1 += element.length
+        } else {
+            sumaTotal1 += element
+        }
+    }
+    return(sumaTotal1)
+}
+console.log("Con el for of")
+console.log(averageWord1(mixedElements))

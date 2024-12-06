@@ -25,3 +25,15 @@ const duplicates = [
   return removeDup
  }
  console.log(removeDuplicates2(duplicates))
+
+ //antonio, lo encaminó así en clase.
+ function removeDuplicates3(list) {
+  const uniques = []
+  for (const item of list) {
+    if (!uniques.includes(item)) {
+      uniques.push(item)
+    }
+  }
+  return(uniques)
+ }
+ console.log(removeDuplicates3(duplicates))

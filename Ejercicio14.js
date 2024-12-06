@@ -28,3 +28,18 @@ function repeatCounter(list) { //todo esto tengo que repasarlo bien...
     return count
 }
 console.log(repeatCounter(words))
+
+//diferente
+
+function repeatCounter1(list) {
+    const count1 = {}
+    for (let word of words) {
+        if(count1[word]) {
+            count1[word]++
+        }else{
+            count1[word] = 1
+        }
+    }
+    return count1
+}
+console.log(repeatCounter1(words))

@@ -5,6 +5,7 @@ for (let i = 0; i < placesToTravel.length; i++) {
     if(placesToTravel[i].id === 11 || placesToTravel[i].id === 40) {
         placesToTravel.splice(i,1)
         i-- //ajusta el indice porque los elementos se pueden desplazar, aunque lo he probado sin y me funcionaba.
+        //no es recomendable borrar trozos de arrays, es mejor sacar una nueva con lo que queramos mostrar.
     }
 }
 console.log(placesToTravel)
