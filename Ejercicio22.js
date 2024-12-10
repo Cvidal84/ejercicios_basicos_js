@@ -11,9 +11,8 @@ const foodSchedule = [
   { name: "Rice", isVegan: true },
   { name: "Pasta", isVegan: true },
 ];
-
+//opcion 1
 fruitIndex = 0 //iniciamos un indice en frutas
-
 for (let food of foodSchedule) {
     if (food.isVegan == false) { //comprobamos si no es vegano
         food.name = fruits[fruitIndex] //reemplazamos con la fruta actual de la lista fruits
@@ -25,3 +24,18 @@ for (let food of foodSchedule) {
     }
 }
 console.log(foodSchedule)
+
+//opcion2 hecha por antonio en clase
+newFood = []
+for (const food of foodSchedule) {
+  if (food.isVegan) {
+    newFood.push(food)
+  } else {
+    newFood.push({
+      name: fruits[fruitIndex],
+      isVegan: true, 
+    })
+    fruitIndex++
+  }
+}
+console.log(newFood)
