@@ -8,8 +8,9 @@ let longitud = 10
 //4 suma de dos variables
 let suma = altura + longitud
 //5 mostrar todo por pantalla
-console.log(miSuperheroeFavorito)
-console.log(numeroFavorito)
-console.log(altura)
-console.log(longitud)
-console.log(suma)
+console.log(`Mi super heroe favorito es ${miSuperheroeFavorito}`)
+console.log(`Mi número favorito es ${numeroFavorito}`)
+console.log(`Esta medida de altura es ${altura}`)
+console.log(`Esta medida de longitud es ${longitud}`)
+console.log(`La suma de los dos es ${suma}`)
+
