@@ -10,7 +10,7 @@ function sumNumbers(numberList) {
     return sumaTotal
 }
 console.log(sumNumbers(numbers))
-
+// con un for of
 function sumNumbers1(numberList) {
     let sumaTotal1 = 0
 

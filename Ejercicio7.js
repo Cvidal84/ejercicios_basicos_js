@@ -11,4 +11,4 @@ function greaterNumber(numberOne , numberTwo) {
   greaterNumber(1,10)
   greaterNumber(10,9)
 
-  //comparamos números y decimos cual es mayor, si son iguales ninguno es mayor que otro
+  

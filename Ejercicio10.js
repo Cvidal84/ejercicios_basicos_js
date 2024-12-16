@@ -9,3 +9,15 @@ function average(numberList) {
     return sumaTotal/numberList.length
 }
 console.log(average(numbers))
+
+//con un for of
+
+function average1(numberList) {
+    let sumaTotal1 = 0
+
+    for(let number of numbers) {
+        sumaTotal1 += number
+    }
+    return sumaTotal1/numberList.length
+}
+console.log(average1(numbers))
