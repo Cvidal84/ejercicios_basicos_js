@@ -10,3 +10,15 @@ function findLongestWord(stringList) {
     return longestWord
 }
 console.log (findLongestWord(avengers))
+
+//con un for of
+function findLongestWord1(stringList) {
+    let longestWord1 = ""
+    for (let avenger of avengers) {
+        if(avenger.length > longestWord1.length) {
+            longestWord1 = avenger
+        }
+    }
+    return longestWord1
+}
+console.log(findLongestWord1(avengers))
