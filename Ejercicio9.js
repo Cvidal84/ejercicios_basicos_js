@@ -10,3 +10,13 @@ function sumNumbers(numberList) {
     return sumaTotal
 }
 console.log(sumNumbers(numbers))
+
+function sumNumbers1(numberList) {
+    let sumaTotal1 = 0
+
+    for (let number of numbers) {
+        sumaTotal1 += number
+    }
+    return sumaTotal1
+}
+console.log(sumNumbers1(numbers))
