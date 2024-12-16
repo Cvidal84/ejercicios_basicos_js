@@ -13,18 +13,21 @@ const names = [
     'Jessica',
     'Marc'
   ];
-  function nameFinder(nameList, nameFind) { //me parece muy complicado de hacer
-    const index = nameList.findIndex(name => name.toLowerCase() === nameFind.toLowerCase())
-    if (index !== -1) {
-        return `El nombre ${nameFind} está en el array en la posición ${index}.`
-    } else {
-        return `El nombre ${nameFind} no está en el array.`
-    }
-  }
+ 
 
-  console.log(nameFinder(names, 'Juanpe'))
-  console.log(nameFinder(names, 'Carlos'))
-  console.log(nameFinder(names,'jessica'))
+  function nameFinder1(nameList, nameFind) {
+    let index = 0
+    for (const name of nameList) {
+      if(name.toLowerCase() == nameFind.toLowerCase()) {
+        return `El nombre ${nameFind} está en el array en la posición ${index}.`
+      }
+      index++ //el for of no tiene indice, le hemos tenido que meter un index para que vaya sumando y saber en que posición está el nombre que queremos buscar
+    }
+    return `El nombre ${nameFind} no está en el array.`
+  }
+  console.log(nameFinder1(names, 'Juanpe'))
+  console.log(nameFinder1(names, 'Carlos'))
+  console.log(nameFinder1(names,'jessica'))
 
   
   
