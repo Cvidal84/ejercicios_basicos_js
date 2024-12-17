@@ -14,7 +14,10 @@ for (let product of products) {
     }
 }
 //esto funciona bien, filtra y enumera todos los que contienen la palabra camiseta independientemente de mayusculas
-const result = products.filter(product => 
-    product.toLowerCase().includes("camiseta")
-  );
-  console.log(result);
+const result = []
+for (const product of products) {
+    if (product.toLowerCase().includes("camiseta")) {
+        result.push(product)
+    }
+}
+console.log(result)

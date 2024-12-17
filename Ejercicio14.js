@@ -34,10 +34,10 @@ console.log(repeatCounter(words))
 function repeatCounter1(list) {
     const count1 = {}
     for (let word of words) {
-        if(count1[word]) {
+        if(count1[word]) {//lo mismo el primero es si la palabra ya se ha encontrado en la lista
             count1[word]++
         }else{
-            count1[word] = 1
+            count1[word] = 1//este si no esta la palabra coloca un 1
         }
     }
     return count1
