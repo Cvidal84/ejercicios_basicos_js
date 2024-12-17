@@ -9,3 +9,13 @@ for (let i = 0; i < placesToTravel.length; i++) {
     }
 }
 console.log(placesToTravel)
+
+// con for of creo una array nueva y meto todo menos el 11 y el 40, es facil pero cuesta de ver.
+const filteredPlaces = []
+
+for (const place of placesToTravel) {
+    if(place.id !==11 && place.id !==40) {
+        filteredPlaces.push(place)
+    }
+}
+console.log(filteredPlaces)
